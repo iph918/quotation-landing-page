@@ -1,138 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Quotation</title>
+  <title>Quotation | Instant Window Quotes From Job-Site Photos</title>
+  <meta name="description" content="Quotation helps window installers generate accurate, customized quotes from job-site photos in minutes." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f8f8f8;
-    color:#13294B;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:0 32px;
-}
-
-nav{
-    height:90px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:1px solid #e5e5e5;
-    background:white;
-}
-
-.logo{
-    font-family:'Sora',sans-serif;
-    font-size:28px;
-    font-weight:800;
-}
-
-.btn{
-    background:#ff7a00;
-    color:white;
-    padding:14px 24px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.hero{
-    padding:120px 0;
-    text-align:center;
-}
-
-.hero h1{
-    font-family:'Sora',sans-serif;
-    font-size:72px;
-    line-height:1.1;
-    margin-bottom:24px;
-}
-
-.hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:22px;
-    color:#555;
-}
-
-.accurate{
-    background:white;
-    padding:120px 20px;
-    text-align:center;
-}
-
-.accurate h2{
-    font-family:'Sora',sans-serif;
-    font-size:64px;
-    margin-bottom:20px;
-}
-
-.accurate p{
-    font-size:24px;
-    color:#666;
-}
-
-footer{
-    padding:80px 20px;
-    text-align:center;
-    color:#777;
-}
-
-</style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-<nav>
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%;">
-        <div class="logo">QUOTATION</div>
-        <a href="#" class="btn">Request Early Access</a>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo-link">
+        <img src="assets/logo-full.png" alt="Quotation Logo" class="logo" />
+      </a>
+
+      <nav class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#early-access" class="nav-cta">Request Early Access</a>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<section class="hero">
-    <div class="container">
-        <h1>Instant Window Quotes<br>From Job-Site Photos</h1>
+  <main>
 
-        <p>
-            Generate accurate, customized quotes in minutes
-            so you can close more jobs while the customer
-            is still interested.
-        </p>
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="eyebrow">PROFESSIONAL QUOTING FOR WINDOW INSTALLERS</p>
+
+          <h1>
+            Instant Window Quotes
+            <span>From Job-Site Photos</span>
+          </h1>
+
+          <p class="hero-text">
+            Generate accurate, customized quotes in minutes so you can close more jobs while the customer is still interested.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#early-access" class="button primary">Request Early Access</a>
+            <a href="#how-it-works" class="button secondary">See How It Works</a>
+          </div>
+
+          <div class="trust-strip">
+            <span>✓ Accurate pricing</span>
+            <span>✓ Faster turnaround</span>
+            <span>✓ Built for window installers</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/landing-mockup.png" alt="Quotation landing page mockup" class="mockup-image" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="accuracy-section">
+      <div class="container accuracy-grid">
+
+        <div class="accuracy-copy">
+          <p class="eyebrow">THE DIFFERENCE</p>
+
+          <h2>The Price Is Accurate.</h2>
+
+          <p class="lead">
+            Built around real supplier pricing, labor costs, and installation requirements.
+          </p>
+
+          <p>
+            Fast doesn't matter if the number is wrong. Reliable pricing is the foundation of the platform.
+          </p>
+        </div>
+
+        <div class="accuracy-points">
+          <div class="accuracy-point">
+            <h3>No guessing</h3>
+            <p>Quotes are based on real project inputs, not vague ranges.</p>
+          </div>
+
+          <div class="accuracy-point">
+            <h3>No generic estimates</h3>
+            <p>Each quote is customized to the job-site details.</p>
+          </div>
+
+          <div class="accuracy-point">
+            <h3>No ballpark pricing</h3>
+            <p>The goal is a number your team can actually send.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="problem-section">
+      <div class="container">
+        <p class="section-label">THE PROBLEM</p>
+
+        <div class="card-grid three">
+          <div class="info-card">
+            <div class="icon">⏱</div>
+            <h3>Supplier Delays</h3>
+            <p>Waiting on supplier quotes slows you down and loses customer interest.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon">▦</div>
+            <h3>Slow Estimating</h3>
+            <p>Manual measuring and pricing takes too long and eats into your day.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon">◎</div>
+            <h3>Lost Impulse Buyers</h3>
+            <p>If you can't quote fast, customers call someone who will.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <p class="section-label">HOW IT WORKS</p>
+
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Take Photos</h3>
+            <p>Capture photos of windows and openings on site.</p>
+          </div>
+
+          <div class="step-arrow">→</div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Confirm Estimate</h3>
+            <p>Review and adjust measurements to ensure everything looks right.</p>
+          </div>
+
+          <div class="step-arrow">→</div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Generate Quote</h3>
+            <p>Get a professional, accurate quote ready to send.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section">
+      <div class="container">
+        <p class="section-label">WHY IT MATTERS</p>
+
+        <div class="card-grid three">
+          <div class="benefit-card">
+            <h3>Faster Turnaround</h3>
+            <p>Deliver quotes in minutes, not days.</p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Lower Overhead</h3>
+            <p>Eliminate hours of manual estimating.</p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Higher Close Rate</h3>
+            <p>Quote while interest is still high.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="early-access">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>Stop waiting to send quotes.</h2>
+            <p>Quotation helps window installers turn job-site photos into accurate quotes faster.</p>
+          </div>
+
+          <form class="signup-form">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="company" placeholder="Company" />
+            <input type="email" name="email" placeholder="Email" />
+            <button type="submit">Request Early Access</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <img src="assets/logo-full.png" alt="Quotation Logo" class="footer-logo" />
+
+      <div class="footer-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#">Privacy Policy</a>
+        <a href="mailto:hello@quotation-app.com">Contact</a>
+      </div>
+
+      <p>© Quotation</p>
     </div>
-</section>
-
-<section class="accurate">
-    <div class="container">
-        <h2>The Price Is Accurate.</h2>
-
-        <p>
-            Reliable pricing is the foundation of the entire platform.
-        </p>
-    </div>
-</section>
-
-<footer>
-    © 2026 Quotation
-</footer>
+  </footer>
 
 </body>
 </html>
