@@ -879,9 +879,17 @@ CTA
 SCROLL SNAP
 ========================================= */
 
+/* =========================================
+SCROLL SNAP
+========================================= */
+
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 .hero,
@@ -890,6 +898,8 @@ html {
 .benefits-section,
 .cta-section {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
 }
   
 }
