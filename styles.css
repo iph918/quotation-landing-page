@@ -96,7 +96,7 @@ a {
 ========================== */
 
 .hero {
-  padding: 72px 0 88px;
+  padding: 100px 0 88px;
   overflow: hidden;
 }
 
@@ -139,11 +139,11 @@ a {
 }
 
 .hero-accent {
-  width: 64px;
-  height: 4px;
+  width: 56px;
+  height: 5px;
   background: var(--orange);
   border-radius: 999px;
-  margin: 28px 0 32px;
+  margin: 22px 0 28px;
 }
 
 .hero-text {
@@ -222,7 +222,11 @@ a {
   height: auto;
   border-radius: 24px;
   box-shadow: 0 30px 80px rgba(16, 31, 58, 0.12);
-  transform: none;
+  transition: transform .3s ease;
+}
+
+.mockup-image:hover {
+  transform: translateY(-6px);
 }
 
 /* ==========================
