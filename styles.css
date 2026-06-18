@@ -126,7 +126,7 @@ a {
 
 .hero h1 {
   font-family: "Sora", sans-serif;
-  font-size: clamp(48px, 6vw, 82px);
+  font-size: clamp(48px, 4.8vw, 72px);
   line-height: 0.98;
   letter-spacing: -2px;
   color: var(--navy);
