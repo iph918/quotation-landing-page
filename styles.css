@@ -112,6 +112,13 @@ a {
 .hero {
   padding: 100px 0 88px;
   overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(16,31,58,.05),
+      transparent 60%
+    );
 }
 
 .hero-grid {
@@ -891,21 +898,3 @@ CTA
   }
 
 }  
-  
-/* =========================================
-SCROLL SNAP
-========================================= */
-
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
-}
-
-.hero,
-.accuracy-section,
-.how-section,
-.benefits-section,
-.cta-section {
-  scroll-snap-align: start;
-  scroll-margin-top: 50px;
-}
