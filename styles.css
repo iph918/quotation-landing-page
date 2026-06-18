@@ -506,101 +506,103 @@ a {
 }
 
 /* =========================
-   HOW IT WORKS
+HOW IT WORKS
 ========================= */
 
 .how-section {
-  padding: 120px 0;
-  background: var(--background);
+padding: 120px 0;
+background: var(--background);
 }
 
 .workflow {
-  max-width: 1200px;
-  margin: 60px auto 0;
+max-width: 1200px;
+margin: 60px auto 0;
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 28px;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+gap: 28px;
 }
 
 .workflow-step {
-  flex: 1;
-  max-width: 340px;
+flex: 1;
+max-width: 360px;
 
-  position: relative;
+position: relative;
 
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
+display: flex;
+align-items: flex-start;
+gap: 32px;
 }
 
 .workflow-number {
-  position: absolute;
-  left: -18px;
-  top: -10px;
-  z-index: 2;
+position: absolute;
 
-  width: 44px;
-  height: 44px;
+left: -42px;
+top: 18px;
 
-  border: 2px solid var(--orange);
-  border-radius: 50%;
+z-index: 2;
 
-  background: white;
+width: 44px;
+height: 44px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+border: 2px solid var(--orange);
+border-radius: 50%;
 
-  font-weight: 700;
-  color: var(--orange);
+background: white;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-weight: 700;
+color: var(--orange);
 }
 
 .workflow-image {
-  width: 140px;
-  height: 140px;
+width: 160px;
+height: 160px;
 
-  object-fit: contain;
+object-fit: contain;
 
-  display: block;
+display: block;
 
-  transition: transform 0.25s ease;
+transition: transform 0.25s ease;
 }
 
 .workflow-step:hover .workflow-image {
-  transform: translateY(-4px);
+transform: translateY(-4px);
 }
 
 .workflow-text h3 {
-  color: var(--navy);
-  margin-bottom: 12px;
-  font-size: 24px;
-  line-height: 1.2;
+color: var(--navy);
+margin-bottom: 12px;
+font-size: 24px;
+line-height: 1.2;
 }
 
 .workflow-text p {
-  color: var(--muted);
-  line-height: 1.7;
-  margin: 0;
+color: var(--muted);
+line-height: 1.7;
+margin: 0;
 }
 
 .workflow-line {
-  flex: 1;
-  max-width: 60px;
-  height: 2px;
-  margin-top: 70px;
+flex: 1;
+max-width: 60px;
+height: 2px;
+margin-top: 80px;
 
-  background:
-    repeating-linear-gradient(
-      to right,
-      var(--orange),
-      var(--orange) 6px,
-      transparent 6px,
-      transparent 12px
-    );
+background:
+repeating-linear-gradient(
+to right,
+var(--orange),
+var(--orange) 6px,
+transparent 6px,
+transparent 12px
+);
 
-  opacity: 0.45;
+opacity: 0.45;
 }
 
 /* ==========================
