@@ -27,8 +27,22 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: var(--text);
-  background: var(--white);
   line-height: 1.6;
+
+  background-color: #f9fafc;
+
+  background-image:
+    linear-gradient(
+      rgba(16,31,58,.02) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(16,31,58,.02) 1px,
+      transparent 1px
+    );
+
+  background-size: 100px 100px;
 }
 
 img {
