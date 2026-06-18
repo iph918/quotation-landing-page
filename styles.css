@@ -512,94 +512,96 @@ HOW IT WORKS
 }
 
 .workflow {
-max-width: 1200px;
-margin: 60px auto 0;
+  max-width: 1400px;
+  margin: 60px auto 0;
 
-display: flex;
-align-items: flex-start;
-justify-content: center;
-gap: 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .workflow-step {
-flex: 1;
-max-width: 360px;
+  flex: 1;
+  max-width: 360px;
 
-position: relative;
+  position: relative;
 
-display: flex;
-align-items: flex-start;
-gap: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
 }
 
 .workflow-number {
-position: absolute;
+  position: absolute;
 
-left: -42px;
-top: 18px;
+  left: -42px;
+  top: 18px;
 
-z-index: 2;
+  z-index: 2;
 
-width: 44px;
-height: 44px;
+  width: 44px;
+  height: 44px;
 
-border: 2px solid var(--orange);
-border-radius: 50%;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
 
-background: white;
+  background: white;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-font-weight: 700;
-color: var(--orange);
+  font-weight: 700;
+  color: var(--orange);
 }
 
 .workflow-image {
-width: 160px;
-height: 160px;
+  width: 160px;
+  height: 160px;
 
-object-fit: contain;
+  object-fit: contain;
 
-display: block;
+  display: block;
 
-transition: transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .workflow-step:hover .workflow-image {
-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .workflow-text h3 {
-color: var(--navy);
-margin-bottom: 12px;
-font-size: 24px;
-line-height: 1.2;
+  color: var(--navy);
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .workflow-text p {
-color: var(--muted);
-line-height: 1.7;
-margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
 }
 
 .workflow-line {
-flex: 1;
-max-width: 60px;
-height: 2px;
-margin-top: 80px;
+  flex: 1;
+  max-width: 120px;
+  min-width: 90px;
 
-background:
-repeating-linear-gradient(
-to right,
-var(--orange),
-var(--orange) 6px,
-transparent 6px,
-transparent 12px
-);
+  height: 2px;
+  margin-top: 80px;
 
-opacity: 0.45;
+  background:
+    repeating-linear-gradient(
+      to right,
+      var(--orange),
+      var(--orange) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+
+  opacity: 0.45;
 }
 
 /* ==========================
