@@ -874,4 +874,22 @@ CTA
   .cta-box h2 {
     font-size: 34px;
   }
+
+  /* =========================================
+SCROLL SNAP
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+.hero,
+.accuracy-section,
+.how-section,
+.benefits-section,
+.cta-section {
+  scroll-snap-align: start;
+}
+  
 }
