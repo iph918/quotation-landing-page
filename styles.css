@@ -655,62 +655,89 @@ HOW IT WORKS
   background: var(--border);
 }
 
-/* ==========================
-   CTA
-========================== */
+/* =========================
+CTA
+========================= */
+
+.cta-section {
+  padding: 120px 0;
+  background: #f8fafc;
+}
 
 .cta-box {
   background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
 
-  border: 1px solid #e7ecf2;
-
-  border-radius: 30px;
-
-  padding: 72px;
+  padding: 60px;
 
   display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 50px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 80px;
+
   align-items: center;
 }
 
-.cta-box h2 {
+.cta-copy {
+  max-width: 650px;
+}
+
+.cta-copy h2 {
   font-family: "Sora", sans-serif;
+  font-size: clamp(52px, 5vw, 72px);
+  font-weight: 800;
+  line-height: 1.05;
   color: var(--navy);
-  font-size: 56px;
-  line-height: 1.1;
-  margin-bottom: 12px;
+
+  max-width: 600px;
+
+  margin-bottom: 24px;
 }
 
-.cta-box p {
+.cta-copy p {
+  font-size: 20px;
+  line-height: 1.7;
   color: var(--muted);
+
+  max-width: 540px;
 }
 
-.signup-form {
+.cta-form {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.signup-form input {
-  padding: 16px;
+.cta-form input {
+  height: 58px;
+
+  border: 1px solid #dbe2ea;
   border-radius: 12px;
-  border: 1px solid var(--border);
+
+  padding: 0 16px;
+
   font-size: 16px;
 }
 
-.signup-form button {
+.cta-form button {
+  height: 58px;
+
+  border: none;
+  border-radius: 12px;
+
   background: var(--orange);
   color: white;
 
-  border: none;
-
-  padding: 18px;
-
-  border-radius: 12px;
-
   font-weight: 700;
+  font-size: 16px;
+
   cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.cta-form button:hover {
+  opacity: 0.92;
 }
 
 /* ==========================
