@@ -684,7 +684,7 @@ CTA
 
 .cta-copy h2 {
   font-family: "Sora", sans-serif;
-  font-size: clamp(52px, 5vw, 72px);
+  font-size: clamp(48px, 4vw, 64px);
   font-weight: 800;
   line-height: 1.05;
   color: var(--navy);
