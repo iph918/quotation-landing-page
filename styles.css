@@ -875,20 +875,12 @@ CTA
     font-size: 34px;
   }
 
-  /* =========================================
-SCROLL SNAP
-========================================= */
-
 /* =========================================
 SCROLL SNAP
 ========================================= */
 
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
-
 body {
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 
