@@ -296,43 +296,52 @@ a {
 ========================== */
 
 .accuracy-section {
-  padding: 160px 0;
+  padding: 120px 0;
   background: var(--section);
 }
 
 .accuracy-grid {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 70px;
   align-items: center;
 }
 
+/* LEFT PANEL */
+
 .accuracy-copy {
-  max-width: 100%;
   background: white;
-  padding: 56px;
-  border-radius: 24px;
-  border: 1px solid var(--border);
-  box-shadow: 0 20px 50px rgba(16,31,58,.05);
+
+  border: 1px solid #e6ebf3;
+
+  border-radius: 28px;
+
+  padding: 52px;
+
+  box-shadow:
+    0 12px 30px rgba(16,31,58,.06),
+    0 2px 8px rgba(16,31,58,.04);
 }
 
 .accuracy-copy h2 {
   font-family: "Sora", sans-serif;
   color: var(--navy);
-  font-size: 72px;
+  font-size: 56px;
   line-height: 1.05;
-  letter-spacing: -1.5px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .lead {
   font-size: 22px;
-  margin-bottom: 18px;
+  line-height: 1.5;
+  margin-bottom: 22px;
 }
 
 .accuracy-copy p {
   color: var(--muted);
 }
+
+/* RIGHT CARDS */
 
 .accuracy-points {
   display: flex;
@@ -341,26 +350,33 @@ a {
 }
 
 .accuracy-point {
+  background: white;
+
+  border: 1px solid #e6ebf3;
+
+  border-radius: 24px;
+
+  padding: 34px;
+
   position: relative;
 
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 
-  padding: 36px 36px 36px 88px;
+  box-shadow:
+    0 10px 25px rgba(16,31,58,.06),
+    0 2px 6px rgba(16,31,58,.04);
 
-  box-shadow: 0 16px 40px rgba(16,31,58,.04);
-
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease;
+  transition: all .25s ease;
 }
 
 .accuracy-point:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
 
   box-shadow:
-    0 24px 60px rgba(16,31,58,.08);
+    0 18px 40px rgba(16,31,58,.08),
+    0 4px 12px rgba(16,31,58,.05);
 }
 
 .accuracy-point::before {
@@ -369,8 +385,8 @@ a {
   position: absolute;
 
   left: 0;
-  top: 24px;
-  bottom: 24px;
+  top: 20px;
+  bottom: 20px;
 
   width: 4px;
 
@@ -379,18 +395,11 @@ a {
   border-radius: 999px;
 }
 
-.accuracy-point::after {
-  content: "×";
+/* CHECK ICON */
 
-  position: absolute;
-
-  left: 28px;
-  top: 50%;
-
-  transform: translateY(-50%);
-
-  width: 34px;
-  height: 34px;
+.accuracy-icon {
+  width: 40px;
+  height: 40px;
 
   border-radius: 50%;
 
@@ -402,15 +411,21 @@ a {
   align-items: center;
   justify-content: center;
 
-  font-size: 24px;
-  font-weight: 700;
+  flex-shrink: 0;
 
-  line-height: 1;
+  font-size: 22px;
+  font-weight: 800;
 }
 
-.accuracy-point h3 {
+.accuracy-content h3 {
   color: var(--navy);
+  font-size: 20px;
   margin-bottom: 8px;
+}
+
+.accuracy-content p {
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 /* ==========================
