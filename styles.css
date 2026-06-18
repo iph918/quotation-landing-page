@@ -102,7 +102,7 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(520px, 1.15fr);
+  grid-template-columns: 1.05fr 1fr;
   gap: 72px;
   align-items: center;
 }
@@ -131,7 +131,7 @@ a {
   letter-spacing: -2px;
   color: var(--navy);
   margin-bottom: 0;
-  max-width: 700px;
+  max-width: 760px;
 }
 
 .hero h1 span {
