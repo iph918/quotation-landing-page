@@ -403,9 +403,9 @@ a {
 
   border-radius: 50%;
 
-  background: rgba(253,118,16,.12);
+  background: rgba(253,118,16,.18);
 
-  color: var(--orange);
+  color: var(--white);
 
   display: flex;
   align-items: center;
