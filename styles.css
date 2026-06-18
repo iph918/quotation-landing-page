@@ -115,8 +115,8 @@ a {
 
   background:
     radial-gradient(
-      circle at top center,
-      rgba(16,31,58,.05),
+      circle at 50% -10%,
+      rgba(16, 31, 58, 0.18),
       transparent 60%
     );
 }
