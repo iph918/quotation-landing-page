@@ -41,9 +41,10 @@ a {
 }
 
 .container {
-  width: 90%;
-  max-width: var(--max-width);
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 /* ==========================
@@ -68,7 +69,7 @@ a {
 }
 
 .logo {
-  height: 182px;
+  height: 64px;
   width: auto;
 }
 
@@ -338,18 +339,35 @@ a {
   padding: 110px 0;
 }
 
+.problem-section {
+  background: #ffffff;
+}
+
+.how-section {
+  background: #f8fafc;
+}
+
+.benefits-section {
+  background: #ffffff;
+}
+
+.cta-section {
+  background: #f8fafc;
+}
+
 .section-label {
   text-align: center;
   color: var(--orange);
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
 .card-grid {
   display: grid;
-  gap: 24px;
+  gap: 32px;
 }
 
 .card-grid.three {
@@ -359,9 +377,16 @@ a {
 .info-card,
 .benefit-card {
   background: white;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 36px;
+  border: 1px solid #e7ecf2;
+  border-radius: 16px;
+  padding: 40px;
+  transition: all .25s ease;
+}
+
+.info-card:hover,
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(16,31,58,.08);
 }
 
 .info-card h3,
@@ -396,8 +421,8 @@ a {
 }
 
 .step-number {
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
 
   margin: 0 auto 20px;
 
@@ -411,11 +436,13 @@ a {
   justify-content: center;
 
   font-weight: 700;
+  font-size: 20px;
 }
 
 .step h3 {
   color: var(--navy);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 28px;
 }
 
 .step p {
@@ -423,8 +450,9 @@ a {
 }
 
 .step-arrow {
-  font-size: 32px;
+  font-size: 42px;
   color: var(--orange);
+  font-weight: 700;
 }
 
 /* ==========================
@@ -432,11 +460,13 @@ a {
 ========================== */
 
 .cta-box {
-  background: var(--section);
+  background: white;
+
+  border: 1px solid #e7ecf2;
 
   border-radius: 30px;
 
-  padding: 60px;
+  padding: 72px;
 
   display: grid;
   grid-template-columns: 1fr 420px;
@@ -447,7 +477,8 @@ a {
 .cta-box h2 {
   font-family: "Sora", sans-serif;
   color: var(--navy);
-  font-size: 48px;
+  font-size: 56px;
+  line-height: 1.1;
   margin-bottom: 12px;
 }
 
@@ -488,7 +519,7 @@ a {
 
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .footer-container {
@@ -498,7 +529,7 @@ a {
 }
 
 .footer-logo {
-  height: 182px;
+  height: 64px;
 }
 
 .footer-links {
