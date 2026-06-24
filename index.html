@@ -448,11 +448,13 @@ await fetch(
 
   } catch (error) {
 
-    status.textContent =
-      'Something went wrong. Please try again.';
+  console.error(error);
 
-  }
+  status.innerHTML =
+    'Something went wrong. Please email us directly at <a href="mailto:contact@quotation-app.com">contact@quotation-app.com</a>.';
 
+}
+  
 });
 
 </script>
