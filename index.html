@@ -345,33 +345,32 @@
 
      <form id="early-access-form" class="cta-form">
 
-  <input
-    type="text"
-    id="name"
-    placeholder="Name"
-    required
-  />
+<input
+  type="text"
+  id="name"
+  placeholder="Name"
+  required
+/>
 
-  <input
-    type="text"
-    id="company"
-    placeholder="Company"
-    required
-  />
+<input
+  type="text"
+  id="company"
+  placeholder="Company"
+  required
+/>
 
-  <input
-    type="tel"
-    id="phone"
-    placeholder="Phone Number"
-    required
-  />
+<input
+  type="email"
+  id="email"
+  placeholder="Email"
+  required
+/>
 
-  <input
-    type="email"
-    id="email"
-    placeholder="Email"
-    required
-  />
+<input
+  type="tel"
+  id="phone"
+  placeholder="Phone Number"
+/>
 
   <button type="submit">
     Request Early Access
@@ -423,13 +422,17 @@ form.addEventListener('submit', async (e) => {
 
   try {
 
-    await fetch(
-      'https://script.google.com/macros/s/AKfycbwraU8FcPKVfckwGXPxyM-FBHJ2TbEP8pR0lmKM0-BESc-fueGH1oFFobGwntAelwQgzQ/exec',
-      {
-        method: 'POST',
-        body: JSON.stringify(data)
-      }
-    );
+await fetch(
+  'https://script.google.com/macros/s/AKfycbwraU8FcPKVfckwGXPxyM-FBHJ2TbEP8pR0lmKM0-BESc-fueGH1oFFobGwntAelwQgzQ/exec',
+  {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'text/plain'
+    },
+    body: JSON.stringify(data)
+  }
+);
 
     status.textContent =
       'Success! Good things are on the way.';
