@@ -745,6 +745,8 @@ CTA
   background: white;
 
   outline: none;
+
+  transition: border-color 0.2s ease;
 }
 
 .cta-form input:focus {
@@ -771,6 +773,18 @@ CTA
 
 .cta-form button:hover {
   opacity: 0.92;
+}
+
+.cta-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-status {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #16a34a;
+  margin-top: 8px;
 }
 
 @media (max-width: 900px) {
