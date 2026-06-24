@@ -787,6 +787,25 @@ CTA
   margin-top: 8px;
 }
 
+.contact-link {
+  text-align: center;
+  margin-top: 18px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-link a {
+  color: var(--orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
 
   .cta-box {
