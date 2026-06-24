@@ -343,31 +343,43 @@
 
       </div>
 
-      <form class="cta-form">
+     <form id="early-access-form" class="cta-form">
 
-        <input
-          type="text"
-          placeholder="Name"
-          required
-        />
+  <input
+    type="text"
+    id="name"
+    placeholder="Name"
+    required
+  />
 
-        <input
-          type="text"
-          placeholder="Company"
-          required
-        />
+  <input
+    type="text"
+    id="company"
+    placeholder="Company"
+    required
+  />
 
-        <input
-          type="email"
-          placeholder="Email"
-          required
-        />
+  <input
+    type="tel"
+    id="phone"
+    placeholder="Phone Number"
+    required
+  />
 
-        <button type="submit">
-          Request Early Access
-        </button>
+  <input
+    type="email"
+    id="email"
+    placeholder="Email"
+    required
+  />
 
-      </form>
+  <button type="submit">
+    Request Early Access
+  </button>
+
+  <div class="form-status" id="form-status"></div>
+
+</form>
 
     </div>
 
@@ -392,6 +404,50 @@
       <p>© Quotation</p>
     </div>
   </footer>
+
+<script>
+
+const form = document.getElementById('early-access-form');
+const status = document.getElementById('form-status');
+
+form.addEventListener('submit', async (e) => {
+
+  e.preventDefault();
+
+  status.textContent = 'Submitting...';
+
+  const data = {
+    name: document.getElementById('name').value,
+    company: document.getElementById('company').value,
+    phone: document.getElementById('phone').value,
+    email: document.getElementById('email').value
+  };
+
+  try {
+
+    await fetch(
+      'PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE',
+      {
+        method: 'POST',
+        body: JSON.stringify(data)
+      }
+    );
+
+    status.textContent =
+      'Success! Good things are on the way.';
+
+    form.reset();
+
+  } catch (error) {
+
+    status.textContent =
+      'Something went wrong. Please try again.';
+
+  }
+
+});
+
+</script>
 
 </body>
 </html>
