@@ -49,10 +49,19 @@
         <img src="assets/logo-full.png" alt="Quotation Logo" class="logo" />
       </a>
 
-      <nav class="nav-links">
-        <a href="#how-it-works">How It Works</a>
-        <a href="#early-access" class="nav-cta">Request Early Access</a>
-      </nav>
+<nav class="nav-links">
+
+  <a href="#demo">Demo</a>
+
+  <a href="#how-it-works">
+    How It Works
+  </a>
+
+  <a href="#early-access" class="nav-cta">
+    Request Early Access
+  </a>
+
+</nav>
     </div>
   </header>
 
@@ -78,16 +87,27 @@
         Generate accurate, customized quotes in minutes so you can close more jobs while the customer is still interested.
       </p>
 
-      <div class="hero-actions">
-        <a href="#early-access" class="button primary">
-          Request Early Access
-        </a>
+<div class="hero-actions">
 
-        <a href="#how-it-works" class="button secondary">
-          See How It Works
-        </a>
-      </div>
+  <a
+    href="YOUR_DEMO_URL"
+    class="button primary demo-link"
+    target="_blank"
+    rel="noopener"
+  >
+    Try Interactive Demo
+  </a>
 
+  <a href="#early-access" class="button secondary">
+    Request Early Access
+  </a>
+
+</div>
+
+<p class="demo-note">
+  Opens a guided demo in a new tab. Takes about 60 seconds.
+</p>
+      
       <div class="trust-strip">
         <span>✓ Accurate pricing</span>
         <span>✓ Faster turnaround</span>
@@ -107,7 +127,16 @@
   </div>
 </section>
 
-    <section class="accuracy-section">
+<!-- NEW DEMO SECTION GOES HERE -->
+
+<section class="demo-section" id="demo">
+
+  <!-- all of the new demo code -->
+
+</section>
+
+
+<section class="accuracy-section">
   <div class="container accuracy-grid">
 
     <div class="accuracy-copy">
@@ -490,5 +519,23 @@ await fetch(
 
 </script>
 
+</script>
+
+
+<div
+  class="demo-return-bar"
+  id="demo-return-bar"
+>
+
+  <span>
+    Finished with the demo?
+  </span>
+
+  <a href="#early-access">
+    Request Early Access
+  </a>
+
+</div>
+  
 </body>
 </html>
