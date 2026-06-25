@@ -524,15 +524,19 @@ const demoLinks =
 const demoReturnBar =
   document.getElementById('demo-return-bar');
 
-demoLinks.forEach(link => {
+if (demoReturnBar) {
 
-  link.addEventListener('click', () => {
+  demoLinks.forEach(link => {
 
-    demoReturnBar.classList.add('active');
+    link.addEventListener('click', () => {
+
+      demoReturnBar.classList.add('active');
+
+    });
 
   });
 
-});
+}
 
 
 </script>
