@@ -506,7 +506,7 @@ await fetch(
 
     form.reset();
 
-  } catch (error) {
+} catch (error) {
 
   console.error(error);
 
@@ -514,13 +514,28 @@ await fetch(
     'Something went wrong. Please email us directly at <a href="mailto:contact@quotation-app.com">contact@quotation-app.com</a>.';
 
 }
-  
+
 });
 
-</script>
+
+const demoLinks =
+  document.querySelectorAll('.demo-link');
+
+const demoReturnBar =
+  document.getElementById('demo-return-bar');
+
+demoLinks.forEach(link => {
+
+  link.addEventListener('click', () => {
+
+    demoReturnBar.classList.add('active');
+
+  });
+
+});
+
 
 </script>
-
 
 <div
   class="demo-return-bar"
