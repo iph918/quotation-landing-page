@@ -636,15 +636,12 @@ HOW IT WORKS DEMO CTA
 
 .demo-cta-card {
 
-  position: relative;
-  overflow: visible;
-
   margin-top: 80px;
 
   background: white;
 
   border: 1px solid rgba(16,31,58,.08);
-  border-top: 4px solid #101f3a;
+  border-top: 4px solid #fd7610;
 
   border-radius: 28px;
 
@@ -656,30 +653,9 @@ HOW IT WORKS DEMO CTA
   gap: 40px;
 
   box-shadow:
-    0 25px 60px rgba(16,31,58,.10);
+    0 25px 60px rgba(16,31,58,.08);
 
   transition: all .3s ease;
-}
-
-.demo-cta-card::before {
-
-  content: '';
-
-  position: absolute;
-
-  width: 350px;
-  height: 350px;
-
-  background: rgba(16, 31, 58, 0.06);
-
-  border-radius: 50%;
-
-  filter: blur(70px);
-
-  top: -100px;
-  right: -100px;
-
-  z-index: -1;
 }
 
 .demo-cta-card:hover {
@@ -687,7 +663,7 @@ HOW IT WORKS DEMO CTA
   transform: translateY(-4px);
 
   box-shadow:
-    0 30px 70px rgba(16,31,58,.10);
+    0 35px 80px rgba(16,31,58,.12);
 }
 
 .demo-cta-copy h3 {
@@ -727,12 +703,8 @@ HOW IT WORKS DEMO CTA
 }
 
 .demo-cta-button {
-
-  flex-shrink: 0;
-
-  min-width: 300px;
-
-  justify-content: center;
+  min-width: 320px;
+  height: 64px;
 }
 
 @media (max-width: 900px) {
