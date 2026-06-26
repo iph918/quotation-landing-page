@@ -492,6 +492,11 @@ a {
   margin-bottom: 60px;
 }
 
+.demo-label {
+  margin-top: 80px;
+  margin-bottom: -40px;
+}
+
 .card-grid {
   display: grid;
   gap: 32px;
