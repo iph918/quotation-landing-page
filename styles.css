@@ -636,16 +636,13 @@ HOW IT WORKS DEMO CTA
 
 .demo-cta-card {
 
-  margin-top: 120px;
+  margin-top: 80px;
 
-  background: white;
-
-  border: 1px solid rgba(16,31,58,.08);
-  border-top: 4px solid #fd7610;
+  background: #101f3a;
 
   border-radius: 28px;
 
-  padding: 42px 48px;
+  padding: 48px 56px;
 
   display: flex;
   justify-content: space-between;
@@ -653,7 +650,7 @@ HOW IT WORKS DEMO CTA
   gap: 40px;
 
   box-shadow:
-    0 25px 60px rgba(16,31,58,.08);
+    0 30px 70px rgba(16,31,58,.18);
 
   transition: all .3s ease;
 }
@@ -674,7 +671,7 @@ HOW IT WORKS DEMO CTA
 
   margin-bottom: 14px;
 
-  color: #101f3a;
+  color: white;
 }
 
 .demo-cta-copy p {
@@ -683,23 +680,16 @@ HOW IT WORKS DEMO CTA
 
   line-height: 1.7;
 
-  color: #5b6475;
+  color: rgba(255,255,255,.75);
 
   margin-bottom: 24px;
-}
-
-.demo-badges {
-
-  display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
 }
 
 .demo-badges span {
 
   font-weight: 600;
 
-  color: #101f3a;
+  color: white;
 }
 
 .demo-cta-button {
@@ -716,6 +706,8 @@ HOW IT WORKS DEMO CTA
     text-align: center;
 
     padding: 36px 28px;
+
+    border-left: 6px solid #fd7610;
   }
 
   .demo-cta-copy p {
