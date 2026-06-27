@@ -833,7 +833,7 @@ CTA
   grid-template-columns: 1.3fr 1fr;
   gap: 80px;
 
-  align-items: center;
+  align-items: start;
 }
 
 .cta-copy {
@@ -863,7 +863,7 @@ CTA
 .cta-form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  justify-content: center;
 }
 
 .cta-form input {
