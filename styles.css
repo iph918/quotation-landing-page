@@ -645,13 +645,28 @@ HOW IT WORKS DEMO CTA
 
   margin-top: 80px;
 
-  background:
-  radial-gradient(
-    circle at top center,
-    rgba(16,31,58,.05),
-    transparent 60%
-  ),
-  #ffffff;
+  background-color: #f9fafc;
+
+  background-image:
+    radial-gradient(
+      circle at top center,
+      rgba(16,31,58,.05),
+      transparent 60%
+    ),
+    linear-gradient(
+      rgba(16,31,58,.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(16,31,58,.08) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    auto,
+    80px 80px,
+    80px 80px;
 
   border: 2px solid var(--orange);
 
