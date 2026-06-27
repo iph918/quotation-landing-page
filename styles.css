@@ -711,11 +711,18 @@ HOW IT WORKS DEMO CTA
   margin-bottom: 24px;
 }
 
+.demo-badges {
+
+  display: flex;
+
+  gap: 32px;
+
+  flex-wrap: wrap;
+}
+
 .demo-badges span {
 
   font-weight: 600;
-
-  gap: 32px;
 
   color: #101f3a;
 }
