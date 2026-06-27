@@ -646,15 +646,18 @@ HOW IT WORKS DEMO CTA
   margin-top: 80px;
 
   background:
-    linear-gradient(
-      135deg,
-      #f1f4f8 0%,
-      #e9edf3 100%
-    );
+  radial-gradient(
+    circle at top center,
+    rgba(16,31,58,.05),
+    transparent 60%
+  ),
+  #ffffff;
 
   border: 2px solid var(--orange);
 
   border-radius: 28px;
+
+  overflow: hidden;
 
   padding: 48px 56px;
 
