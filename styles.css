@@ -277,9 +277,6 @@ a {
     max-width: 100%;
   }
 
-  .hero-visual {
-    order: 2;
-  }
 }
 
 /* ==========================
@@ -1005,11 +1002,159 @@ CTA
   color: var(--muted);
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
+/* =========================================
+SMALL LAPTOP + LANDSCAPE TABLET
+========================================= */
 
 @media (max-width: 1100px) {
+
+  .container {
+    padding: 0 28px;
+  }
+
+  /* HERO */
+
+  .hero-grid {
+    gap: 48px;
+  }
+
+  .hero h1 {
+    font-size: 56px;
+  }
+
+  .hero-text {
+    font-size: 19px;
+  }
+
+  .mockup-image {
+    max-width: 600px;
+  }
+
+  /* ACCURACY */
+
+  .accuracy-grid {
+    gap: 48px;
+  }
+
+  .accuracy-copy {
+    padding: 44px;
+  }
+
+  .accuracy-copy h2 {
+    font-size: 48px;
+  }
+
+  /* HOW IT WORKS */
+
+  .workflow {
+    gap: 24px;
+  }
+
+  .workflow-step {
+    gap: 24px;
+  }
+
+  .workflow-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* DEMO CTA */
+
+  .demo-cta-card {
+    padding: 40px;
+    gap: 32px;
+  }
+
+  .demo-cta-button {
+    min-width: 280px;
+  }
+
+  /* WHY IT MATTERS */
+
+  .benefit-item {
+    padding: 0 18px;
+  }
+
+  /* CTA */
+
+  .cta-box {
+    gap: 56px;
+    padding: 48px;
+  }
+
+  .cta-copy {
+    padding-top: 24px;
+  }
+
+  .cta-copy h2 {
+    font-size: 48px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-accent {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .trust-strip {
+    justify-content: center;
+  }
+
+  .workflow {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .workflow-line {
+    display: none;
+  }
+
+  .workflow-number {
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .workflow-step {
+    max-width: 500px;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .demo-cta-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .demo-cta-card {
+    text-align: center;
+  }
+
+  .cta-copy {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .cta-copy p {
+    max-width: 100%;
+  }
+
+  .cta-form {
+    max-width: 550px;
+    margin: 0 auto;
+  }
 
   .hero-grid,
   .accuracy-grid,
@@ -1017,33 +1162,18 @@ CTA
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 56px;
-  }
-
-  .accuracy-copy h2 {
-    font-size: 48px;
-  }
-
-  .cta-box h2 {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 900px) {
-
   .benefits-row {
-  flex-direction: column;
-  gap: 40px;
-}
+    flex-direction: column;
+    gap: 40px;
+  }
 
-.benefit-divider {
-  display: none;
-}
+  .benefit-divider {
+    display: none;
+  }
 
-.benefit-item {
-  padding: 0;
-}
+  .benefit-item {
+    padding: 0;
+  }
 
   .card-grid.three {
     grid-template-columns: 1fr;
@@ -1054,8 +1184,8 @@ CTA
     gap: 20px;
   }
 
-  .nav-links a:not(.nav-cta) {
-    display: none;
+  .nav-links {
+    gap: 20px;
   }
 }
 
