@@ -313,6 +313,36 @@ a {
   }
 }
 
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .accuracy-copy h2,
+  .cta-copy h2 {
+    font-size: 30px;
+  }
+
+  .demo-cta-copy h3 {
+    font-size: 28px;
+  }
+
+  .workflow-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .button {
+    min-height: 54px;
+  }
+
+}
+
 /* ==========================
    ACCURACY
 ========================== */
