@@ -1168,20 +1168,34 @@ SMALL LAPTOP + LANDSCAPE TABLET
     font-size: 48px;
   }
 
-  /* HOW IT WORKS */
+ /* HOW IT WORKS */
 
-  .workflow {
-    gap: 24px;
-  }
+.workflow {
+  gap: 12px;
+  justify-content: center;
+}
 
-  .workflow-step {
-    gap: 24px;
-  }
+.workflow-step {
+  gap: 16px;
+  max-width: 280px;
+}
 
-  .workflow-image {
-    width: 140px;
-    height: 140px;
-  }
+.workflow-image {
+  width: 120px;
+  height: 120px;
+}
+
+.workflow-line {
+  width: 80px;
+}
+
+.workflow-text h3 {
+  font-size: 2rem;
+}
+
+.workflow-text p {
+  font-size: 1rem;
+}
 
   /* DEMO CTA */
 
