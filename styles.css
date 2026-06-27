@@ -492,13 +492,6 @@ a {
   margin-bottom: 60px;
 }
 
-.demo-label {
-  margin-top: 100px;
-  margin-bottom: -20px;
-
-  color: var(--orange);
-}
-
 .card-grid {
   display: grid;
   gap: 32px;
