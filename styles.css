@@ -924,12 +924,19 @@ CTA
 }
 
 .form-note {
+
+  max-width: 280px;
+
+  margin: 18px auto 0;
+
   text-align: center;
-  margin-top: 18px;
 
   font-family: "Inter", sans-serif;
+
   font-size: 14px;
+
   color: var(--muted);
+
   line-height: 1.5;
 }
 
