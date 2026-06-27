@@ -1246,29 +1246,6 @@ SMALL LAPTOP + LANDSCAPE TABLET
     justify-content: center;
   }
 
-  .workflow {
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-  }
-
-  .workflow-line {
-    display: none;
-  }
-
-  .workflow-number {
-    position: static;
-    margin-bottom: 16px;
-  }
-
-  .workflow-step {
-    max-width: 500px;
-
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .demo-cta-copy {
     display: flex;
     flex-direction: column;
@@ -1325,6 +1302,37 @@ SMALL LAPTOP + LANDSCAPE TABLET
   .nav-links {
     gap: 20px;
   }
+  
+}
+
+/* =========================================
+HOW IT WORKS STACKS ON SMALL LAPTOPS
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .workflow {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .workflow-line {
+    display: none;
+  }
+
+  .workflow-step {
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .workflow-number {
+    position: static;
+    margin-bottom: 16px;
+  }
+
 }
 
 /* =========================================
