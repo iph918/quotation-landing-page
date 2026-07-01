@@ -308,6 +308,10 @@ MOBILE
   flex-shrink: 0;
 }
 
+.logo-link {
+  flex-shrink: 0;
+}
+
 .nav-links {
   gap: 0;
 }
