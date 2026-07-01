@@ -304,6 +304,8 @@ MOBILE
 
 .logo {
   height: 32px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .nav-links {
