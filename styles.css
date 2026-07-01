@@ -299,7 +299,8 @@ a {
 
   .nav-container {
     height: 76px;
-    padding: 0 28px;
+    padding: 0 20px;
+    justify-content: space-between;
   }
 
   .logo {
