@@ -1179,15 +1179,11 @@ MOBILE
   }
 
   .logo {
-    height: 36px;
-  }
-
-  .nav-links {
-    gap: 12px;
+    height: 28px;
   }
 
   .nav-cta {
-    padding: 12px 18px;
+    padding: 12px 14px;
   }
 
   /* HERO */
